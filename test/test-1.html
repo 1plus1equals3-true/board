@@ -1,76 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Flexbox Masonry</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f0f0f0;
-        }
-
-        .masonry-container {
-            display: flex; /* 컨테이너를 Flexbox로 만듦 (주축: 가로) */
-            justify-content: center; /* 전체 컬럼들을 가운데 정렬 */
-            gap: 20px; /* 컬럼들 사이의 간격 */
-            width: 500px; /* 전체 컨테이너 너비 (예시) */
-            border: 2px solid purple;
-            padding: 20px;
-            background-color: white;
-            margin: 0 auto;
-        }
-
-        .masonry-column {
-            display: flex;
-            flex-direction: column; /* 각 컬럼 내부의 아이템들을 세로로 쌓음 */
-            flex-basis: calc(50% - 10px); /* 컬럼 하나가 컨테이너 너비의 절반 - 간격의 절반을 차지하도록 */
-            /* gap: 20px; /* 아이템들 사이의 세로 간격 (컬럼 내부에서) */
-            /* gap 속성을 사용하려면, 각 item의 margin-bottom을 없애야 합니다. */
-        }
-
-        .flex-item {
-            background-color: lightcoral;
-            padding: 15px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 20px; /* 아이템들 사이의 세로 간격 */
-            /* 마지막 아이템에는 margin-bottom을 없앨 수도 있습니다:
-               &:last-child { margin-bottom: 0; } (CSS에서는 불가능, SCSS 등에서 가능)
-               .masonry-column > *:last-child { margin-bottom: 0; }
-            */
-        }
-
-        /* 개별 항목 높이 지정 */
-        .item-1 { height: 100px; }
-        .item-2 { height: 100px; }
-        .item-3 { height: 150px; }
-        .item-4 { height: 200px; }
-        .item-5 { height: 120px; } /* 항목 5 높이 */
-        .item-6 { height: 90px; }  /* 항목 6 높이 */
-        .item-7 { height: 180px; }
-        .item-8 { height: 110px; }
-    </style>
-</head>
-<body>
-    <h1>Flexbox를 이용한 Masonry 유사 레이아웃</h1>
-    <div class="masonry-container">
-        <div class="masonry-column">
-            <div class="flex-item item-1">항목 1 (100px)</div>
-            <div class="flex-item item-3">항목 3 (150px)</div>
-            <div class="flex-item item-5">항목 5 (120px)</div>
-            <div class="flex-item item-7">항목 7 (180px)</div>
-        </div>
-        <div class="masonry-column">
-            <div class="flex-item item-2">항목 2 (100px)</div>
-            <div class="flex-item item-4">항목 4 (200px)</div>
-            <div class="flex-item item-6">항목 6 (90px)</div>
-            <div class="flex-item item-8">항목 8 (110px)</div>
-        </div>
-    </div>
-    <a href=""></a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>test</title>
+  </head>
+  <body>
+    <h1>test</h1>
+    <p>test test</p>
+  </body>
 </html>
